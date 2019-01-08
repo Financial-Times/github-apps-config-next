@@ -1,0 +1,21 @@
+{
+  "owner": "Financial-Times",
+  "installations": [
+    {
+      "id": 442071,
+      "comment": "Customer Products Tako"
+    },
+    {
+      "id": 359627,
+      "comment": "Renovate"
+    },
+    {
+      "id": 397974,
+      "comment": "Settings"
+    },
+    {
+      "id": 397965,
+      "comment": "Stale"
+    }
+  ]
+}
