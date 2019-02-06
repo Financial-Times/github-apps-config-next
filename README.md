@@ -18,14 +18,14 @@ Within a repository, extend our shared configuration like so.
 
 ```yaml
 # This is Financial-Times/next-article:.github/settings.yaml.
-_extends: probot-config-next
+_extends: github-apps-config-next
 ```
 
 You can also overwrite configuration after extending it.
 
 ```yaml
 # This is Financial-Times/next-article:.github/settings.yaml.
-_extends: probot-config-next
+_extends: github-apps-config-next
 
 repository:
   has_wiki: true
