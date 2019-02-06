@@ -6,7 +6,7 @@ Customer Products configurations for our shared GitHub configuration files.
 
 ## The `.github/` folder
 
-This folder contains shared configuration for GitHub Apps.
+This folder contains shared configuration that is used by GitHub Apps which we have installed on the Financial-Times organisation.
 
 Read more about [how we're using this in our wiki](https://github.com/Financial-Times/next/wiki/GitHub#Probot).
 
