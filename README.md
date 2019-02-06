@@ -1,24 +1,41 @@
 # github-apps-config-next
 
-Customer Products configurations for the [manage-github-apps](https://github.com/Financial-Times/manage-github-apps) CLI tool.
+[![CircleCI](https://circleci.com/gh/Financial-Times/github-apps-config-next.svg?style=svg)](https://circleci.com/gh/Financial-Times/github-apps-config-next)
 
-The configurations are in a separate repository because the manage-github-apps CLI tool can be used by teams outside of Customer Products.
+Customer Products configurations for our shared GitHub configuration files.
 
-## How it works
+## The `.github/` folder
 
-Each configuration provides the manage-github-apps CLI tool with a list of GitHub apps ('installations'). The manage-github-apps CLI tool adds the appropriate repositories to these installations.
+This folder contains shared configuration that is used by GitHub Apps which we have installed on the Financial-Times organisation.
 
-## Custom configuration
+Read more about [how we're using this in our wiki](https://github.com/Financial-Times/next/wiki/GitHub#Probot).
 
-You may create a custom GitHub app configuration. The configuration must have an owner and installation(s) in the following format:
+This depends on the [`probot-config`](https://github.com/probot/probot-config) extension for loading configuration.
 
-```json
-  "owner": "some-github-organization",
-  "installations": [
-    {
-      "id": 123456,
-      "comment": "Some bot"
-    }
-  ]
-}
+### Usage
+
+Within a repository, extend our shared configuration like so.
+
+```yaml
+# This is Financial-Times/next-article:.github/settings.yaml.
+_extends: probot-config-next
 ```
+
+You can also overwrite configuration after extending it.
+
+```yaml
+# This is Financial-Times/next-article:.github/settings.yaml.
+_extends: probot-config-next
+
+repository:
+  has_wiki: true
+  has_projects: true
+```
+
+## The `manage-github-apps/` folder
+
+This folder contains our configuration for the [`manage-github-apps` command line tool](https://github.com/Financial-Times/manage-github-apps).
+
+Each configuration provides the tool with a list of GitHub App installations. It will then add the GitHub repository that you specify to these installations.
+
+See the [Financial-Times/manage-github-apps README](https://github.com/Financial-Times/manage-github-apps#readme) for more information.
