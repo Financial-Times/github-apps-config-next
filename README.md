@@ -36,6 +36,6 @@ repository:
 
 This folder contains our configuration for the [`manage-github-apps` command line tool](https://github.com/Financial-Times/manage-github-apps).
 
-Each configuration provides the tool with a list of GitHub App installations. It can then add the appropriate repositories to these installations.
+Each configuration provides the tool with a list of GitHub App installations. It will then add the GitHub repository that you specify to these installations.
 
 See the [Financial-Times/manage-github-apps README](https://github.com/Financial-Times/manage-github-apps#readme) for more information.
