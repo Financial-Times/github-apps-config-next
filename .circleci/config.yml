@@ -7,4 +7,4 @@ jobs:
     steps:
       - checkout
       - run: npx prettier --check "{.circleci,.github,manage-github-apps}/**/*"
-      - run: find manage-github-apps/ -type f -name *.json | xargs -n 1 npx github:financial-times/manage-github-apps verify-config
+      - run: find manage-github-apps/ -type f -name *.json | xargs -n 1 npx github:Financial-Times/manage-github-apps validate-config --config
