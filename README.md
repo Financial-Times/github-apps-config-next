@@ -2,26 +2,28 @@
 
 [![CircleCI](https://circleci.com/gh/Financial-Times/github-apps-config-next.svg?style=svg)](https://circleci.com/gh/Financial-Times/github-apps-config-next)
 
-Customer Products configurations for our shared GitHub configuration files.
+## What's this?
+This repository is where [FT Customer Products](https://biz-ops.in.ft.com/Group/customerproducts) keeps our shared configuration files for our GitHub Apps. *Why?* We use GitHub Apps to [help manage our hundreds of GitHub repositories](https://github.com/Financial-Times/next/wiki/How-We-Manage-Our-GitHub-Repositories).
 
-## The `.github/` folder
+* [Configuration for each GitHub App: The `.github/` folder](/)
+* [Configuration for managing GitHub Apps: The `manage-github-apps/` folder](/)
 
-This folder contains shared configuration that is used by GitHub Apps which we have installed on the Financial-Times organisation.
+### The [`.github/`](https://github.com/Financial-Times/github-apps-config-next/tree/master/.github) folder
+This folder contains configuration files for different [GitHub Apps](https://developer.github.com/apps/).
 
-Read more about [how we're using this in our wiki](https://github.com/Financial-Times/next/wiki/GitHub#Probot).
+* [`settings.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/settings.yml) — The settings for your GitHub repository. For example, we disable repository wikis because we already have [a central wiki](https://github.com/Financial-Times/next/wiki). These settings are applied by the ["Settings" GitHub App](https://probot.github.io/apps/settings).
 
-This depends on the [`probot-config`](https://github.com/probot/probot-config) extension for loading configuration.
-
-### Usage
-
-Within a repository, extend our shared configuration like so.
+* [`stale.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/stale.yml) — These settings are for the ["Stale" GitHub App](https://github.com/probot/stale). It closes abandoned Issues and Pull Requests after a period of inactivity. 🚀*Tip:* You can see all of our GitHub Issues and Pull Requests in [the Houston.ft.com repositories page](https://houston.ft.com/repositories).
+ 
+> Developer Note: We use the [`probot-config`](https://github.com/probot/probot-config) extension to load these configurations. 
+> Within a repository, extend our shared configuration like so:
 
 ```yaml
 # This is Financial-Times/next-article:.github/settings.yaml.
 _extends: github-apps-config-next
 ```
 
-You can also overwrite configuration after extending it.
+> You can also overwrite configuration after extending it.
 
 ```yaml
 # This is Financial-Times/next-article:.github/settings.yaml.
@@ -32,7 +34,7 @@ repository:
   has_projects: true
 ```
 
-## The `manage-github-apps/` folder
+### The [`manage-github-apps/`](https://github.com/Financial-Times/github-apps-config-next/tree/master/manage-github-apps) folder
 
 This folder contains our configuration for the [`manage-github-apps` command line tool](https://github.com/Financial-Times/manage-github-apps).
 
