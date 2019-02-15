@@ -26,5 +26,7 @@ repository:
 ```
 
 #### [`stale.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/stale.yml)  
-These settings are for the ["Stale" GitHub App](https://github.com/probot/stale). It closes abandoned issues and pull requests after a period of inactivity. 🚀*Tip:* You can see all of our open GitHub issues and pull requests in [the Houston.ft.com repositories page](https://houston.ft.com/repositories).
+These settings are for the ["Stale" GitHub App](https://github.com/probot/stale). It closes abandoned issues and pull requests after a period of inactivity.
+
+> 🚀*Tip:* You can see all of our open GitHub issues and pull requests in [the Houston.ft.com repositories page](https://houston.ft.com/repositories).
  
