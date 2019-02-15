@@ -5,8 +5,8 @@
 ## What's this?
 This repository is where [FT Customer Products](https://biz-ops.in.ft.com/Group/customerproducts) keeps our shared configuration files for our GitHub Apps. *Why?* We use GitHub Apps to [help manage our hundreds of GitHub repositories](https://github.com/Financial-Times/next/wiki/How-We-Manage-Our-GitHub-Repositories).
 
-* [Configuration for each GitHub App: The `.github/` folder](/)
-* [Configuration for managing GitHub Apps: The `manage-github-apps/` folder](/)
+* Configuration for each GitHub App: [The `.github/` folder](https://github.com/Financial-Times/github-apps-config-next#the-github-folder)
+* Configuration for managing GitHub Apps: [The `manage-github-apps/` folder](https://github.com/Financial-Times/github-apps-config-next#the-manage-github-apps-folder)
 
 ### The [`.github/`](https://github.com/Financial-Times/github-apps-config-next/tree/master/.github) folder
 This folder contains configuration files for different [GitHub Apps](https://developer.github.com/apps/).
