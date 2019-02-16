@@ -7,5 +7,5 @@ This repository is where [FT Customer Products](https://biz-ops.in.ft.com/Group/
 > We use GitHub Apps to [help manage our hundreds of GitHub repositories](https://github.com/Financial-Times/next/wiki/How-We-Manage-Our-GitHub-Repositories).
 
 #### Further Reading
-* Configuration for each GitHub App: [The `.github/` folder](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/README.md)
-* Configuration for managing GitHub Apps: [The `manage-github-apps/` folder](https://github.com/Financial-Times/github-apps-config-next/blob/master/manage-github-apps/README.md)
+* The configuration files for each of our GitHub Apps are in the `.github/` folder. See the [README](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/README.md) for details.
+* The configuration files for managing our GitHub Apps are in the `manage-github-apps/` folder. See the [README](https://github.com/Financial-Times/github-apps-config-next/blob/master/manage-github-apps/README.md) for details.
