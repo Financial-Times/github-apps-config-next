@@ -3,7 +3,7 @@
 This folder contains configuration files for different [GitHub Apps](https://developer.github.com/apps/).
 
 #### [`settings.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/settings.yml)
-This configures the settings for your GitHub repository. For example, we disable the repository wiki setting, because we already have [a central wiki](https://github.com/Financial-Times/next/wiki). These settings are applied by the ["Settings" GitHub App](https://probot.github.io/apps/settings).
+This configures the settings for your GitHub repository. The settings are applied by the ["Settings" GitHub App](https://probot.github.io/apps/settings).
 
 > We use the [`probot-config`](https://github.com/probot/probot-config) extension to share `settings.yml`. This way we can change it here — and it'll automatically extend to all our other repositories.
 >
