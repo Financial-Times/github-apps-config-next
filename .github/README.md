@@ -3,6 +3,7 @@
 This folder contains configuration files for different [GitHub Apps](https://developer.github.com/apps/).
 
 #### [`settings.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/settings.yml)
+
 This configures the settings for your GitHub repository. The settings are applied by the ["Settings" GitHub App](https://probot.github.io/apps/settings).
 
 > We use the [`probot-config`](https://github.com/probot/probot-config) extension to share `settings.yml`. This way we can change it here — and it'll automatically extend to all our other repositories.
@@ -25,5 +26,6 @@ repository:
   has_projects: true
 ```
 
-#### [`stale.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/stale.yml)  
+#### [`stale.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/stale.yml)
+
 These settings are for the ["Stale" GitHub App](https://github.com/probot/stale). It closes abandoned issues and pull requests after a period of inactivity.
