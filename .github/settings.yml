@@ -54,7 +54,7 @@ teams:
   - name: next
     permission: admin
 
-  - name: all-users
+  - name: compliant-users
     permission: read
 
 # This is the most minimal branch protection.
