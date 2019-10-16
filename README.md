@@ -38,6 +38,18 @@ _extends: github-apps-config-next
 repository:
   has_wiki: true
   has_projects: true
+branches:
+  - name: master
+    protection:
+      # Take the base rules but also require 1 approval
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+      # Also require some status checks to pass
+      required_status_checks:
+        contexts:
+          - build-test
+          - "ci/circleci: build"
+          - "ci/circleci: test"
 ```
 
 #### [`stale.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/master/.github/stale.yml)
