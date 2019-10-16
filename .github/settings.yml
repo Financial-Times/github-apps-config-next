@@ -3,8 +3,6 @@
 #   _extends: github-apps-config-next
 
 repository:
-  # Default branch is the master branch
-  default_branch: master
   # Allow users to pick what kind of merging they want per PR
   allow_squash_merge: true
   allow_merge_commit: true
