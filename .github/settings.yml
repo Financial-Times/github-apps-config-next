@@ -9,7 +9,7 @@ repository:
 
 teams:
   # The next team is allowed to admin any of our repositories
-  - name: next
+  - name: customer-products
     permission: admin
   # Customer products collaborators should be alowed to push branches
   - name: customer-products-collaborators
