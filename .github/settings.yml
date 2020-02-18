@@ -19,6 +19,10 @@ teams:
   - name: compliant-users
     permission: pull
 
+# By default remove any individually named collaborators, they should be in
+# the teams listed above
+collaborators: []
+
 branches:
   # Protect the master branch from force pushing
   - name: master
