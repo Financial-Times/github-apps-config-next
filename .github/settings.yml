@@ -1,40 +1,20 @@
-# These settings are synced to GitHub by https://probot.github.io/apps/settings/
-# They can be subclassed in your repo using:
-#   _extends: github-apps-config-next
-
 repository:
   allow_squash_merge: false
   allow_merge_commit: true
   allow_rebase_merge: true
-
 teams:
-  # The next team is allowed to admin any of our repositories
   - name: customer-products
     permission: admin
-  # Customer products collaborators should be alowed to push branches
   - name: customer-products-collaborators
     permission: push
-  # All users with 2fa enabled should be able to read our repos
   - name: compliant-users
     permission: pull
-
 branches:
-  # Protect the master branch from force pushing
   - name: master
     protection:
-      # Don't require status checks by default, this can be enabled when this
-      # is subclassed
       required_status_checks: null
-      # Don't require pull request reviews by default, this can be enabled when
-      # this is subclassed
       required_pull_request_reviews: null
-      # Require admins to pass the same rules as everyone else, given all
-      # Customer Products engineers are admins
       enforce_admins: true
-      # Restrict who can push to the master branch. By default any admin can
-      # still push which means any Customer Products engineer can push, but
-      # collaborators will need to get a Customer Products engineer to push or
-      # merge pull requests for them
       restrictions:
         users: []
         teams: []
