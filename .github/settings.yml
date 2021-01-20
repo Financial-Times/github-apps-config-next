@@ -19,6 +19,25 @@ teams:
     permission: pull
 
 branches:
+  # Protect the main branch from force pushing
+  - name: main
+    protection:
+      # Don't require status checks by default, this can be enabled when this
+      # is subclassed
+      required_status_checks: null
+      # Don't require pull request reviews by default, this can be enabled when
+      # this is subclassed
+      required_pull_request_reviews: null
+      # Require admins to pass the same rules as everyone else, given all
+      # Customer Products engineers are admins
+      enforce_admins: true
+      # Restrict who can push to the main branch. By default any admin can
+      # still push which means any Customer Products engineer can push, but
+      # collaborators will need to get a Customer Products engineer to push or
+      # merge pull requests for them
+      restrictions:
+        users: []
+        teams: []
   # Protect the master branch from force pushing
   - name: master
     protection:
