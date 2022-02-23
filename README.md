@@ -52,6 +52,20 @@ branches:
           - "ci/circleci: test"
 ```
 
+##### Important Note About Status Checks
+
+You **must** include the status checks you expect to pass in the overriding config, otherwise no checks will be required to pass before merging. For example, if you expect CircleCI's `test` job to be passing before you'd consider merging a PR branch you might have a simple `.github/settings.yml` file like
+```yaml
+_extends: github-apps-config-next
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        checks:
+          - "ci/circleci: test"
+```
+Pleasingly, the Probot app will merge the overridden `main` setting with the rest of the inherited settings for `main` via [`deepmerge`](https://github.com/TehShrike/deepmerge), as documented in their [README](https://github.com/probot/settings#inheritance).
+
 #### [`stale.yml`](https://github.com/Financial-Times/github-apps-config-next/blob/main/.github/stale.yml)
 
 These settings are for the ["Stale" GitHub App](https://github.com/probot/stale). It closes abandoned issues and pull requests after a period of inactivity.
