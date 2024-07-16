@@ -1,3 +1,6 @@
+> [!WARNING]  
+> **Deprecated**: Github app installation is managed centrally by the [Code Management](https://financialtimes.enterprise.slack.com/archives/C02ST9MNV0S) team, and we no longer use the Probot Settings app to manage Github repo settings.
+
 # github-apps-config-next
 
 [![CircleCI](https://circleci.com/gh/Financial-Times/github-apps-config-next.svg?style=svg)](https://circleci.com/gh/Financial-Times/github-apps-config-next)
